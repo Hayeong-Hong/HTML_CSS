@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소 회전시키기</title>
+    <style>
+/*         div{
+            display: inline-block;
+        } */
+        img{
+            height: 300px;
+        }
+        .wrap{
+            perspective: 200px;/* 화면에 깊이감을 주는 속성 */
+        }
+
+        .rotatex:hover{
+            transform: rotateX(45deg);
+        }
+
+        .rotatey:hover{
+            transform: rotateY(45deg);
+        }
+
+        .rotatexy:hover{
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="rotatex">
+            <img src="images/bg4.jpg" alt="배경2">
+        </div>
+        
+    </div>
+    <div class="wrap">
+        <div class="rotatey">
+            <img src="images/bg4.jpg" alt="배경2">
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="rotatexy">
+            <img src="images/bg4.jpg" alt="배경2">
+        </div>
+    </div>
+</body>
+</html>
